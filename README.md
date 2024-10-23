@@ -1,4 +1,7 @@
 # Music Source Separation Universal Training Code
+wxPython dependancy breaks Colabs with wheel error.
+Furthermore, no use_amp: true in at least some Roformer yaml causes yaml errors (I'm not sure if you need to add it manually at the bottom of training section as jarredou explained, or forking some previous commit of the original repo is enough.
+[OG info follows]
 
 Repository for training models for music source separation. Repository is based on [kuielab code](https://github.com/kuielab/sdx23/tree/mdx_AB/my_submission/src) for [SDX23 challenge](https://github.com/kuielab/sdx23/tree/mdx_AB/my_submission/src). The main idea of this repository is to create training code, which is easy to modify for experiments. Brought to you by [MVSep.com](https://mvsep.com).
 
