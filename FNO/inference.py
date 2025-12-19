@@ -179,7 +179,7 @@ def proc_folder(args):
         else:
             with torch.serialization.safe_globals([torch._C._nn.gelu]):
                 state_dict = torch.load(args.start_check_point, map_location=device, weights_only=True)
-            model.load_state_dict(torch.load(PATH), strict=False)
+            model.load_state_dict(state_dict, strict=False)
     print("Instruments: {}".format(config.training.instruments))
 
     # in case multiple CUDA GPUs are used and --device_ids arg is passed
